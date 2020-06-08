@@ -26,7 +26,7 @@
             }
         } else {
             echo "<tr>";
-            echo " <td colspan='7'> No existen vehiculos para este usuario </td>";
+            echo " <td colspan='7'> No existe un usuario con esa cedula </td>";
             echo "</tr>";
         }
         echo "</table>";
