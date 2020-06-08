@@ -50,6 +50,8 @@
             $sqlV = "SELECT * FROM vehiculo WHERE veh_usuario = $usu_id";
             $result = $conn->query($sqlV);
             
+            if($result == true){
+
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
                     $veh_id = $row['veh_id'];
@@ -61,7 +63,7 @@
                 }
             } else {
                 echo "<tr>";
-                echo " <td colspan='7'> No existen vehiculos para este usuario </td>";
+                echo " <td colspan='7'> No hay vehiculos relacionados</td>";
                 echo "</tr>";
             }
 
@@ -76,10 +78,12 @@
             </tr>";
 
             $sqlT = "SELECT * FROM ticket WHERE tic_vehiculo = $veh_id";
-            $result = $conn->query($sqlT);
-            
-            if ($result->num_rows > 0) {
-                while($row = $result->fetch_assoc()) {
+            $resultT = $conn->query($sqlT);
+
+            if($resultT){
+
+            if ($resultT->num_rows > 0) {
+                while($row = $resultT->fetch_assoc()) {
                     echo "<tr>";
                     echo "<td>" . $row['tic_numero'] ."</td>";
                     echo "<td>" . $row['tic_ingreso_fecha'] ."</td>";
@@ -95,11 +99,16 @@
             }
 
             echo "</table>";
+
+        } else{
+            echo "No hay tickets relacionados";
         }
 
+        }
 
-
-
+    } else{
+        echo "No hay vehiculos ni tickets relacionados";
+    }
 
 
 
