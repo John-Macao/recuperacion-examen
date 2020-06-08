@@ -1,0 +1,58 @@
+body{
+    background-image: url("../Imagenes/fondoGris.jpg");
+    font-family: "Arial" ;
+    
+}
+
+
+.menu{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: groove black ;
+    padding: 20px;
+
+}
+
+
+input {
+    width: 15%;
+    height: 25px;
+    font-size: 100%;
+}
+
+.abajo {
+    padding: 40px;
+    text-align: center;
+    border: groove black ;
+    background-color: #CACFD2;
+}
+
+/*
+
+input{
+    width: 40%;
+    height: 50px;
+    font-size: 180%;
+    margin: 10px 10px;
+    background-color: #AEB6BF ;
+}
+
+
+
+th{
+    background-color: #CACFD2;
+}
+
+
+#informacion{
+    width: 40%;
+    margin-left: 30%;
+}
+
+#cancelar{
+    clear: both;
+    margin-left: 49%;
+    width: 100px;
+}
+*/

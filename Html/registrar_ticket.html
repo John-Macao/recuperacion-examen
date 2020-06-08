@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <title>Registrar</title>
+    <link rel="stylesheet" type="text/css" href="../Css/registar.css"/>
+    
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Registre su Ticket Aqui</h1>
+    </div>
+
+    <form method="POST" action="../Controlador/registrar_T.php">
+        <fieldset>
+
+            <label>Cedula del Cliente </label>
+            <input type="text" id="cedula" name="cedula" />
+
+            <label>Placa del Vehiculo </label>
+            <input type="text" id="placa" name="placa" />
+
+            <label>Marca del Vehiculo </label>
+            <input type="text" id="marca" name="marca"/>
+
+            <label>Modelo del Vehiculo</label>
+            <input type="text" id="modelo" name="modelo"/>
+
+            <label>Num. Ticket</label>
+            <input type="text" id="numeroT" name="numeroT" />
+
+            <label>Fecha de Ingreso</label>
+            <input type="text" id="fechaI" name="fechaI" />
+            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span> (dd-mm-yyyy)</span>
+
+            <label>Hora de Ingreso</label>
+            <input type="text" id="horaI" name="horaI"/>
+
+            <label>Fecha de Salida</label>
+            <input type="text" id="fechaS" name="fechaS" />
+            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span> (dd-mm-yyyy)</span>
+
+            <label>Hora de Salida</label>
+            <input type="text" id="horaS" name="horaS"/>
+
+            <input id="agregar" type="submit" value="Registrar"/>
+            <input id="cancelar" type="button" value="Cancelar" onclick="location.href='index.html'">
+            <div></div>
+        </fieldset>
+    </form>
+
+    <div id="info"><b></b></div>
+
+</body>
+
+</html>

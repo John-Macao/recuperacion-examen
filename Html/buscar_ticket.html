@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Buscar Ticket</title>
+
+    <link rel="stylesheet" type="text/css" href="../Css/buscar_T.css"/>
+
+    <script src="../Js/enviar.js"></script>
+
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Busqueda de Ticket</h1>
+    </div>
+
+    <form>
+        <input type="text" id="cedula" name="cedula" value="">
+        <input class="uno" type="button" id="buscarcliente" name="buscarcliente" value="Buscar por cedula" onclick="buscarCliente()">
+        <input type="text" id="placa" name="placa" value="">
+        <input class="dos" type="button" id="buscarplaca" name="buscarplaca" value="Buscar por placa" onclick="buscarPlaca()">
+
+
+        <input type="button" id="cancelar" name="cancelar" value="Cancelar" onclick="location.href='index.html'">
+        <div id="separador"></div>
+    </form>
+    <h2>Informacion</h2>
+    <div id="informacion"><b></b></div>
+
+</body>
+</html>
+
+
+

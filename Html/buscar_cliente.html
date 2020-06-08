@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Buscar Cliente</title>
+
+    <link rel="stylesheet" type="text/css" href="../Css/buscar_C.css"/>
+
+    <script src="../Js/enviar.js"></script>
+
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>Busqueda de un Cliente</h1>
+    </div>
+    <form>
+        <input type="text" id="cedula" name="cedula" value="">
+        <input class="dos" type="button" id="buscarcliente" name="buscarcliente" value="Buscar cliente" onclick="buscarClienteUnico()">
+        
+        <input class="uno" type="button" id="cancelar" name="cancelar" value="Cancelar" onclick="location.href='index.html'">
+        <div id="separador"></div>
+    </form>
+    <h2>Informacion del Cliente</h2>
+    <div id="informacion"><b></b></div>
+
+</body>
+</html>

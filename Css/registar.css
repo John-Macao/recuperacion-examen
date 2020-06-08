@@ -1,0 +1,54 @@
+body{
+    background-image: url("../Imagenes/fondoGris.jpg");
+    font-family: "Arial" ;
+}
+
+.titulo{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: groove black ;
+    padding: 10px;
+
+}
+
+fieldset{
+    background-color: #CACFD2;
+    width: 500px;
+    margin-top: 60px ;
+    margin-left: 460px;
+    margin-bottom: 100px;
+}
+
+form label{
+    margin-left: 50px;
+    margin-top: 20px;
+    display: block;
+}
+
+input[type=text], input[type=password]{
+    margin-left: 50px;
+    width: 400px;
+    
+}
+
+input[type=submit], #cancelar{
+    float: right;
+    margin-right: 0px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 15%;
+    height: 25px;
+    font-size: 100%;
+    
+}
+
+input#agregar{
+    margin-right: 45px;
+}
+
+
+div{
+    clear: both;
+}
